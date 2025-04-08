@@ -56,3 +56,5 @@ jobs:
           script: |
             cd ~
             ./gatewayStartup.sh
+            ls
+            pwd
