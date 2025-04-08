@@ -53,4 +53,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
-          script: "./aiot2-team1/startup/gatewayStartup.sh"
+          script: |
+            cd ./aiot2-team1/startup
+            pwd
+            ls
