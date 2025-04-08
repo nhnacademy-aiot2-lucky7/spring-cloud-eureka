@@ -56,4 +56,4 @@ jobs:
           script: |
             cd ./startup
             pwd
-            ls
+            ./eurekaStartup.sh
