@@ -56,4 +56,6 @@ jobs:
           script: |
             cd ./startup
             pwd
+            chmod +x eurekaStartup.sh
+            pwd
             ./eurekaStartup.sh
