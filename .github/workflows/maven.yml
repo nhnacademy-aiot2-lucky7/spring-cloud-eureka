@@ -55,6 +55,4 @@ jobs:
           script_stop: true
           script: |
             cd ~
-            ./gatewayStartup.sh
-            ls
-            pwd
+            ./startup/gatewayStartup.sh
