@@ -54,3 +54,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: startup/eurekaStartup.sh
+          envs: EUREKA_USERNAME,EUREKA_PASSWORD
+        env:
+          EUREKA_USERNAME: ${{ secrets.EUREKA_USERNAME }}
+          EUREKA_PASSWORD: ${{ secrets.EUREKA_PASSWORD }}
