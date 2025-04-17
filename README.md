@@ -26,10 +26,14 @@ eureka.client.register-with-eureka=true
 # Eureka 서버로부터 다른 서비스의 정보를 가져오기
 eureka.client.fetch-registry=true
 
-# Eureka 서버 주소
-eureka.client.service-url.defaultZone=https://${your_domain_path}/eureka
+# Eureka 서버 username & password
+spring.security.user.name=${your_eureka_server_username}
+spring.security.user.password=${your_eureka_server_password}
 
-# ----------------------------------------------------------------------------
+# Eureka 서버 주소
+eureka.client.service-url.defaultZone=https://${spring.security.user.name}:${spring.security.user.password}@${your_domain_path}/eureka
+
+# ==============================================================================================================================================
 
 # (선택 사항) 클라이언트 인스턴스의 호스트 이름/IP 설정
 eureka.instance.hostname=localhost
