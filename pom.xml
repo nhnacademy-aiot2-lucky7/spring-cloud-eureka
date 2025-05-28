@@ -11,7 +11,6 @@
     <groupId>com.nhnacademy</groupId>
     <artifactId>eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <!--<version>${build.timestamp}</version>-->
     <name>spring-cloud-eureka</name>
     <description>spring-cloud-eureka</description>
     <url/>
@@ -63,6 +62,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
+        <!-- Cache 구현체 -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <version>3.2.0</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
