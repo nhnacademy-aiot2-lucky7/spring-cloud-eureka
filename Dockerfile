@@ -1,5 +1,4 @@
 FROM eclipse-temurin:21-jdk AS builder
-
 WORKDIR /app
 
 # GHCR 인증용 빌드 아규먼트 (보안 경고 방지를 위해 ENV로는 안 씀)
